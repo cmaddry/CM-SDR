@@ -2,9 +2,50 @@
 # Installs
 ## SDR++
 I tried installing SDR++, but I couldn't figure out how to do it from the main github. I'll come back to this later, but for now I will look in to gqrx.
+* Second attempt with [this](https://www.aaronrombaut.com/build-sdr-on-raspberry-pi-5/)
+
+Ran:
+``bash
+sudo apt install -y cmake libad9361-dev libairspy-dev libairspyhf-dev libfftw3-dev libglfw3-dev libhackrf-dev libiio-dev librtaudio-dev libvolk2-dev libzstd-dev
+```
+
+Got the following error:
+```bash
+Errors were encountered while processing:
+ xtrx-dkms
+E: Sub-process /usr/bin/dpkg returned an error code (1)
+```
+
+To build SDR++:
+```bash
+cd ~/Downloads
+wget https://github.com/AlexandreRouma/SDRPlusPlus/archive/refs/heads/master.zip
+unzip master.zip
+cd ~/Downloads/SDRPlusPlus-master
+mkdir build
+cd build
+cmake ..
+make -j4
+```
+
+This actually worked just fine so then I moved onto installing SDR++
+```bash
+cd ..
+sh ~/Downloads/SDRPlusPlus-master/create_root.sh
+
+cd ~/Downloads/SDRPlusPlus-master/build
+sudo make install
+```
+
+Tested to see if it succesfully installed by running:
+```bash
+sdrpp
+```
+IT WORKED!!
 
 ## Gqrx
 To install gqrx, I ran the commands found [here](https://www.gqrx.dk/download/gqrx-sdr-for-the-raspberry-pi). 
+
 Or,
 ```bash
 sudo apt-get update 
