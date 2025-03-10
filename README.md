@@ -11,7 +11,7 @@ sudo apt install -y cmake libad9361-dev libairspy-dev libairspyhf-dev libfftw3-d
 ```
 
 Got the following error:
-```console
+```bash
 Errors were encountered while processing:
  xtrx-dkms
 E: Sub-process /usr/bin/dpkg returned an error code (1)
