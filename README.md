@@ -6,7 +6,7 @@ I tried installing SDR++, but I couldn't figure out how to do it from the main g
 ###  Second attempt with [this](https://www.aaronrombaut.com/build-sdr-on-raspberry-pi-5/)
 
 Ran:
-``bash
+```sh
 sudo apt install -y cmake libad9361-dev libairspy-dev libairspyhf-dev libfftw3-dev libglfw3-dev libhackrf-dev libiio-dev librtaudio-dev libvolk2-dev libzstd-dev
 ```
 
