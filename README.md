@@ -46,6 +46,8 @@ sdrpp
 ```
 IT WORKED!!
 
+3/9/2025
+---
 After messing around with SDR++ and my RTL-SDR, I started to lose faith in my fix. I can't seem to get any signal out from my antenna. When using gqrx, I was able to at least get some FM stations. I'll look into this some more and see what my issues might be.
 
 ## Gqrx
