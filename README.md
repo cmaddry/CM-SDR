@@ -50,6 +50,10 @@ IT WORKED!!
 ---
 After messing around with SDR++ and my RTL-SDR, I started to lose faith in my fix. I can't seem to get any signal out from my antenna. When using gqrx, I was able to at least get some FM stations. I'll look into this some more and see what my issues might be.
 
+3/12/2025
+---
+I decided to try and debug by installing SDR++ on my windows machine to see if that worked any better. I am using Windows Subsystem for Linux (WSL) to do this. I was able to successfully install the necessary drivers + SDR++ + gqrx. I'll give this a try and see if I can get SDR++ to work with my RTL-SDR.
+
 ## Gqrx
 To install gqrx, I ran the commands found [here](https://www.gqrx.dk/download/gqrx-sdr-for-the-raspberry-pi). 
 
