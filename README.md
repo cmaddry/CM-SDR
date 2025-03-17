@@ -54,6 +54,12 @@ After messing around with SDR++ and my RTL-SDR, I started to lose faith in my fi
 ---
 I decided to try and debug by installing SDR++ on my windows machine to see if that worked any better. I am using Windows Subsystem for Linux (WSL) to do this. I was able to successfully install the necessary drivers + SDR++ + gqrx. I'll give this a try and see if I can get SDR++ to work with my RTL-SDR.
 
+3/15/2025
+---
+I still haven't tested the SDR++ build on my windows machine, but I went testing it with my Raspberry Pi 5. I was actually able to find the FM radio stations! Just like in gqrx, they are in the wrong place (at around 50 MHz). I think I installed the RTL-SDR drivers incorrectly on the Pi 5, so now I'll see if they will work on my windows machine. Most people seem to be using the Pi 4, because of all of these Pi 5 issues, but I will keep trying!
+
+I also saw a guy with a handheld SDR hanging walking around Boulder yesterday. I should have asked him for advice.
+
 ## Gqrx
 To install gqrx, I ran the commands found [here](https://www.gqrx.dk/download/gqrx-sdr-for-the-raspberry-pi). 
 
