@@ -62,7 +62,8 @@ I also saw a guy with a handheld SDR hanging walking around Boulder yesterday. I
 
 3/19/2025
 ---
-I tried using WSL with all of the drivers installed by following the Linux commands on the [RTL-SDR Quickstart Guide](https://www.rtl-sdr.com/V4/). I learned that WSL doesn't really work with USB devices without quite a bit of work. I just followed the regular Windows isntallation instructions, so that I can go ahead and give it another go later.                        
+I tried using WSL with all of the drivers installed by following the Linux commands on the [RTL-SDR Quickstart Guide](https://www.rtl-sdr.com/V4/). I learned that WSL doesn't really work with USB devices without quite a bit of work. I just followed the regular Windows installation instructions, so that I can go ahead and give it another go later.                        
+BAM! Got it to work in SDR++ using the Windows install instructions. The FM signals are now in the frequency range they should be in!
 
 ## Gqrx
 To install gqrx, I ran the commands found [here](https://www.gqrx.dk/download/gqrx-sdr-for-the-raspberry-pi). 
@@ -81,26 +82,3 @@ sudo make install
 ```
 
 Then, to make sure it was successfully installed, I ran `gqrx` and I think it worked.
-
-# CM-SDR
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# Helo
-## hello
-### hello
-#### hello
-hello
