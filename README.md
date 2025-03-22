@@ -98,5 +98,5 @@ Here's an image that I got of the data!
 
 ![NOAA 15](images/first_NOAA15.jpg)
 
-I might try and use WXtoImg to decode the data, but I can't imagine it was good enough for that. The signal was pretty weak so I might buy an LNA to improve this. Stoked that I got this to work!!!
+I might try and use WXtoImg to decode the data, but I can't imagine it was good enough for that. The signal was pretty weak so I might buy an LNA to improve this. Stoked that I got this to work!!
 
