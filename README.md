@@ -65,6 +65,16 @@ I also saw a guy with a handheld SDR hanging walking around Boulder yesterday. I
 I tried using WSL with all of the drivers installed by following the Linux commands on the [RTL-SDR Quickstart Guide](https://www.rtl-sdr.com/V4/). I learned that WSL doesn't really work with USB devices without quite a bit of work. I just followed the regular Windows installation instructions, so that I can go ahead and give it another go later.                        
 BAM! Got it to work in SDR++ using the Windows install instructions. The FM signals are now in the frequency range they should be in!
 
+3/21/2025
+---
+I have been messing with the SDR a lot more lately. I have been mapping out different signals in SDR++. I briefly tried to see if I could see any of the NOAA satellites and I was actually able to do it! I found NOAA 15 at the perfect time. I used a dipole antenna setup like [this](https://www.rtl-sdr.com/simple-noaameteor-weather-satellite-antenna-137-mhz-v-dipole/)!
+
+Here's an image that I got of the data!
+
+![NOAA 15](images/first_NOAA15.jpg)
+
+I might try and use WXtoImg to decode the data, but I can't imagine it was good enough for that. The signal was pretty weak so I might buy an LNA to improve this. Stoked that I got this to work!!!
+
 ## Gqrx
 To install gqrx, I ran the commands found [here](https://www.gqrx.dk/download/gqrx-sdr-for-the-raspberry-pi). 
 
