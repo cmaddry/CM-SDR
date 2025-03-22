@@ -1,5 +1,27 @@
-# Here is my instructions for my introduction to SDR
+# Caleb's Introduction to SDR
+This is going to by a blog style repo where I mess around and try to learn how SDR works. No promises that anything works! I'm kind of an idiot and never do anything right the first time (or the second or the third...).
+
 # Installs
+Installs that I followed to get software.
+
+## Gqrx
+To install gqrx, I ran the commands found [here](https://www.gqrx.dk/download/gqrx-sdr-for-the-raspberry-pi).
+
+Or,
+```bash
+sudo apt-get update
+sudo apt-get install -y cmake gnuradio-dev gr-osmosdr qt6-base-dev qt6-svg-dev qt6-wayland libasound2-dev libjack-jackd2-dev portaudio19-dev libpulse-dev
+git clone https://github.com/gqrx-sdr/gqrx.git
+cd gqrx/
+mkdir build
+cd build
+cmake ..
+make
+sudo make install
+```
+
+Then, to make sure it was successfully installed, I ran `gqrx` and I think it worked.
+
 ## SDR++
 ### First attempt
 I tried installing SDR++, but I couldn't figure out how to do it from the main github. I'll come back to this later, but for now I will look in to gqrx.
@@ -46,6 +68,8 @@ sdrpp
 ```
 IT WORKED!!
 
+# Blog !
+I'm just going to note keep here diary style. These notes are really for my reference. 
 3/9/2025
 ---
 After messing around with SDR++ and my RTL-SDR, I started to lose faith in my fix. I can't seem to get any signal out from my antenna. When using gqrx, I was able to at least get some FM stations. I'll look into this some more and see what my issues might be.
@@ -75,20 +99,3 @@ Here's an image that I got of the data!
 
 I might try and use WXtoImg to decode the data, but I can't imagine it was good enough for that. The signal was pretty weak so I might buy an LNA to improve this. Stoked that I got this to work!!!
 
-## Gqrx
-To install gqrx, I ran the commands found [here](https://www.gqrx.dk/download/gqrx-sdr-for-the-raspberry-pi). 
-
-Or,
-```bash
-sudo apt-get update 
-sudo apt-get install -y cmake gnuradio-dev gr-osmosdr qt6-base-dev qt6-svg-dev qt6-wayland libasound2-dev libjack-jackd2-dev portaudio19-dev libpulse-dev
-git clone https://github.com/gqrx-sdr/gqrx.git
-cd gqrx/
-mkdir build 
-cd build
-cmake ..
-make
-sudo make install
-```
-
-Then, to make sure it was successfully installed, I ran `gqrx` and I think it worked.
